@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
-import 'screen/home_screen.dart';
+import 'ui/home/home_ui.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +23,7 @@ class AppBank extends StatelessWidget {
         fontFamily: 'Mulish',
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      home: const HomeUi(),
       debugShowCheckedModeBanner: false,
     );
   }

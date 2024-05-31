@@ -3,9 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:intl/intl.dart';
 
-import '../../../../blocs/card_bills/card_bills_bloc.dart';
-import '../../../../blocs/card_bills/card_bills_state_bloc.dart';
-import '../../../../utils/utils.dart';
+import '../../../blocs/card_bills/card_bills_bloc.dart';
+import '../../../blocs/card_bills/card_bills_state_bloc.dart';
+import '../../../utils/utils.dart';
 import '../../share/text_widget.dart';
 import 'bills_list_title_widget.dart';
 

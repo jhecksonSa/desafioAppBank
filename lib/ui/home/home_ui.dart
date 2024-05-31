@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../blocs/card_bills/card_bills_bloc.dart';
-import '../blocs/card_bills/card_bills_state_bloc.dart';
-import '../blocs/my_cards/my_cards_bloc.dart';
-import '../blocs/my_cards/my_cards_state_bloc.dart';
-import '../services/datasource/my_cards_datasource.dart';
-import '../services/repository/my_cards_repository.dart';
-import '../utils/utils.dart';
-import 'widgets/home_widgets/bills_section/bills_section_widget.dart';
+import '../../blocs/card_bills/card_bills_bloc.dart';
+import '../../blocs/card_bills/card_bills_state_bloc.dart';
+import '../../blocs/my_cards/my_cards_bloc.dart';
+import '../../blocs/my_cards/my_cards_state_bloc.dart';
+import '../../services/datasource/my_cards_datasource.dart';
+import '../../services/repository/my_cards_repository.dart';
+import '../../utils/utils.dart';
+import 'bills_section/bills_section_widget.dart';
 
-import '../services/datasource/card_bills_datasource.dart';
-import '../services/repository/card_bills_repository.dart';
+import '../../services/datasource/card_bills_datasource.dart';
+import '../../services/repository/card_bills_repository.dart';
 
-import 'widgets/share/custom_navigation.dart';
-import 'widgets/home_widgets/card_section/cards_section_widget.dart';
-import 'widgets/home_widgets/favorites_section/favorites_section_widget.dart';
-import 'widgets/share/custom_divider.dart';
+import '../share/custom_navigation.dart';
+import 'card_section/cards_section_widget.dart';
+import 'favorites_section/favorites_section_widget.dart';
+import '../share/custom_divider.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class HomeUi extends StatefulWidget {
+  const HomeUi({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeUi> createState() => _HomeUiState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeUiState extends State<HomeUi> {
   CardBillsBloc cardBillsBloc = CardBillsBloc(
     creditAccountRepository: CardBillsRepository(
       httpContract: CardBillsDatasource(),

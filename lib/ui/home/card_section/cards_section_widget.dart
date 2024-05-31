@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../blocs/my_cards/my_cards_bloc.dart';
-import '../../../../blocs/my_cards/my_cards_state_bloc.dart';
+import '../../../blocs/my_cards/my_cards_bloc.dart';
+import '../../../blocs/my_cards/my_cards_state_bloc.dart';
 import '../../share/custom_divider.dart';
 import 'bank_card_wiget.dart';
 
@@ -47,7 +47,7 @@ class CardsSectionWidget extends StatelessWidget implements PreferredSizeWidget 
                 onPageChanged: cardChangeCallback,
                 scrollDirection: Axis.horizontal,
                 padEnds: false,
-                controller: PageController(viewportFraction: 0.965),
+                controller: PageController(viewportFraction: 0.93),
                 children: [
                   BankCardWidget(
                     myCardsModel: (state).myCardsModel.first,

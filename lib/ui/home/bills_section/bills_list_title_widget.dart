@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:intl/intl.dart';
 
-import '../../../../model/cards_model.dart';
-import '../../../../utils/utils.dart';
+import '../../../model/cards_model.dart';
+import '../../../utils/utils.dart';
 import '../../share/custom_divider.dart';
 import '../../share/text_widget.dart';
 

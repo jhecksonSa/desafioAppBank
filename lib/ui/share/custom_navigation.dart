@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../utils/utils.dart';
+import '../../utils/utils.dart';
 
 class CustomNavigation extends StatelessWidget {
   const CustomNavigation({super.key});

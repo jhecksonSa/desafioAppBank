@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
-import '../../../../model/cards_model.dart';
-import '../../../../utils/utils.dart';
+import '../../../model/cards_model.dart';
+import '../../../utils/utils.dart';
 import '../../share/text_widget.dart';
 
 class BankCardWidget extends StatelessWidget {
